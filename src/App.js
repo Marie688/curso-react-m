@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Testimonio from "./Components/Testimonio.js"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="contenedor-principal">
+        <h1>Hola Soy Ana Leticia</h1>
+        <Testimonio
+          nombre="Ana Leticia"
+          imagen="cepillo"
+          cargo="Estudiante de Inicial 2"
+          testimonio="Me gusta cantar, jugar, ver videos,el chocolate y unicornios amo la película Encanto y amo a mi familia. Cuando me levanto por la mañana y después de comer cepillo mis dientecitos"
+        />
+        <Testimonio
+          nombre="Ana Leticia"
+          imagen="comer"
+          cargo="Estudiante de Inicial 2"
+          testimonio="Cuando como toda mi comida sin levantarme de la mesa, mis padres me dan un premio."
+        />
+        <Testimonio
+          nombre="Ana Leticia"
+          imagen="hago-mis-tareas"
+          cargo="Estudiante de Inicial 2"
+          testimonio="Soy una niña muy inteligente y me gusta mucho colorear."
+        />
+      </div>
     </div>
   );
 }
